@@ -1,18 +1,19 @@
-@import "./reset.css";
 @import "./friends.css";
 @import "./message.css";
 @import "./profile.css";
+@import "./reset.css";
+
 @media screen and (min-width: 450px) {
-  .mobile__srceen {
+  .mobile__screen {
     display: none;
   }
 
   .pc__screen {
     width: 100%;
     height: 100vh;
-    background-color: rgb(255, 217, 67);
+    background-color: gray;
     color: #fff;
-    font-size: 33px;
+    font-size: 42px;
     font-weight: bold;
 
     display: flex;
@@ -22,7 +23,7 @@
   }
 
   .pc__screen p {
-    text-shadow: 3px 3px 2px #333;
+    text-shadow: 3px 3px 2px #000;
   }
 }
 
@@ -31,16 +32,15 @@
     display: none;
   }
 
-  .mobile__srceen {
+  .mobile__screen {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .main {
     width: 100%;
-    padding-bottom: 60px;
   }
 
   .nav {
@@ -51,9 +51,9 @@
     width: 100%;
     height: 60px;
 
-    border: 1px solid rgb(203, 203, 203);
+    border: 1px solid #999;
     border-radius: 10px;
-    box-shadow: -2px -2px 25px #999;
+    box-shadow: -2px -2px 25px rgb(93, 93, 93);
 
     display: flex;
     flex-direction: row;

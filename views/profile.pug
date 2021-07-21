@@ -1,29 +1,27 @@
 extends ./base.pug
 
-
-block content
-
-    section.phead
+block content   
+    section.phead   
+        div profile
 
     section.ptop
         .ptop__avatar
-        p.ptop__id
+        p.ptop__id userId
 
     section.pbottom
-        ul 
-            li
+        ul
+            li 
                 form(action="#" method="get")
-                    input(type="submit" value="개인정보 수정")  
-            li
+                    input(type="submit" value="개인정보 수정")
+            li 
                 form(action="#" method="get")
-                    input(type="submit" value="알림 설정") 
-            li
+                    input(type="submit" value="알람 설정")
+            li 
                 form(action="#" method="get")
                     input(type="submit" value="소프트웨어 정보")
-            li
+            li 
                 form(action="#" method="get")
                     input(type="submit" value="이용약관 및 개인정보 처리방침")
-            li
+            li 
                 form(action="#" method="get")
-                    input(type="submit" value= "일반 환경 설정") 
-
+                    input(type="submit" value="일반 환경 설정")

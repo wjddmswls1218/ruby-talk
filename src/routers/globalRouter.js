@@ -3,7 +3,8 @@ import {
   friendsController,
   messageController,
   profileController,
-} from "../controllers/globalcontroller";
+} from "../controllers/globalController";
+
 import express from "express";
 
 const globalRouter = express.Router();

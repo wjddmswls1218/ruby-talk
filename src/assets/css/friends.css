@@ -1,7 +1,7 @@
 .fhead {
   width: 100%;
   height: 60px;
-  background-color: rgb(23, 32, 58);
+  background-color: rgb(41, 41, 77);
   border-bottom: 1px solid #fff;
   color: #fff;
 
@@ -12,6 +12,7 @@
 
   padding: 0px 15px;
 }
+
 .fhead div:nth-child(1) {
   font-size: 24px;
   font-weight: bold;
@@ -20,7 +21,7 @@
 .fsearch {
   width: 100%;
   height: 40px;
-  background-color: rgb(23, 32, 58);
+  background-color: rgb(168, 168, 228);
   border-bottom: 1px solid #fff;
   color: #fff;
 
@@ -31,10 +32,14 @@
 
   padding: 0px 15px;
 }
-.fsearch input[type="text"] {
+
+.fsearch form input[type="text"] {
   background: none;
-  border: none;
   outline: none;
+  border: none;
+
+  width: 200px;
+  height: 22.5px;
 
   border: 1px solid #999;
   border-radius: 15px;
@@ -50,17 +55,19 @@
 
 .flist .flist__friend {
   width: 100%;
-  height: 40px;
-  border: 1px solid #999;
+  height: 50px;
+  border-bottom: 1px solid #777;
 
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+
 .flist .flist__friend div:nth-child(1) {
   width: 15%;
   height: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -72,17 +79,21 @@
   border-radius: 100%;
   margin: 0px 10px;
 }
+
 .flist .flist__friend div:nth-child(2) {
   width: 25%;
   height: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
+
 .flist .flist__friend div:nth-child(3) {
   width: 60%;
-  height: 100%;
+  line-height: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
