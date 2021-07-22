@@ -1,0 +1,15 @@
+extends ./base.pug
+
+block content  
+    div.mainBox
+        h1.logo Ruby Talk
+
+        form(action="/login" method="post")
+            .loginLabel
+                label ID
+                input(type="text" name="input_id")
+            
+            .loginLabel
+                label PASSWORD
+                input(type="password" name="input_pass")
+            input(type="submit" value="LOGIN")
