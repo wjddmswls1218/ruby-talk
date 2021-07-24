@@ -10,7 +10,8 @@ block content
             input(type="text" placeholder="친구를 검색하세요")
 
     section.flist
-        .flist__friend
-            div
-            div name
-            div stattus_msg
+        each f in list 
+            .flist__friend
+                div(style="background-image: url(" + f.avatar + "); background-size :cover; ")
+                div #{f.nickName}
+                div #{f.statusMessage}
