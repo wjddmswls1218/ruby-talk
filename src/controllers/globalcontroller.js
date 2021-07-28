@@ -70,7 +70,8 @@ export const loginController = async (req, res) => {
       })
     );
 
-    req.userLoginFlag = loginFlag;
+    req.user;
+    LoginFlag = loginFlag;
     mainController(req, res);
   } catch (e) {
     console.log(
