@@ -35,6 +35,18 @@ const User = new Schema(
         type: mongoose.Schema.Types.ObjectId,
       },
     ],
+    sMsgList: [
+      {
+        ref: "Message",
+        type: mongoose.Schema.Types.ObjectId,
+      },
+    ],
+    rMsgList: [
+      {
+        ref: "Message",
+        type: mongoose.Schema.Types.ObjectId,
+      },
+    ],
   },
   {
     versionKey: false,

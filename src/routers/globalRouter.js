@@ -5,6 +5,7 @@ import {
   profileController,
   mainController,
   loginController,
+  sendMessageController,
 } from "../controllers/globalController";
 
 import express from "express";
@@ -18,5 +19,6 @@ globalRouter.get("/message", messageController);
 globalRouter.get("/profile", profileController);
 
 globalRouter.post("/login", loginController);
+globalRouter.post("/sendMsg", sendMessageController);
 
 export default globalRouter;

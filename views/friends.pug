@@ -10,8 +10,19 @@ block content
             input(type="text" placeholder="친구를 검색하세요")
 
     section.flist
-        each f in list 
-            .flist__friend
+        div.msgBox#msgBox-js
+            article.msgBox__close
+                button(onclick="javascript:closeMsgBox()") X
+            div
+                textarea#msgContent-js
+            div
+                button(onclick="javascript:sendAction()") 전송
+
+
+
+        each f in list  
+            .flist__friend(onclick="javasrcipt:friendClickHandler('" + f._id + "' )")
                 div(style="background-image: url(" + f.avatar + "); background-size :cover; ")
                 div #{f.nickname}
                 div #{f.statusMessage}
+
